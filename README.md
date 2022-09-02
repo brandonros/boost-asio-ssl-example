@@ -6,6 +6,7 @@ Boost.Asio SSL example
 ```shell
 mkdir build && cd build
 conan install --build=boost ..
-cmake .. -G "Unix Makefiles"
+cmake .. -G "Unix Makefiles" # Mac OS X / Linux
+cmake .. -G "Visual Studio 16 2019" -A Win32 # Windows
 cmake --build .
 ```
